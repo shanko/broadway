@@ -100,14 +100,14 @@ export default function Dashboard({ user, onLogout }) {
   return (
     <div className="min-h-full bg-gray-50 dark:bg-gray-950 flex flex-col">
       {/* Header */}
-      <header className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 px-4 py-3 flex items-center justify-between">
+      <header className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 px-4 py-3 flex items-center justify-between gap-3">
         <div className="flex items-center gap-2.5">
           <div className="h-8 w-8 rounded-lg bg-blue-600 flex items-center justify-center">
             <Theater className="h-4 w-4 text-white" />
           </div>
           <h1 className="text-lg font-semibold text-gray-900 dark:text-gray-100 tracking-tight">Broadway</h1>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1.5">
           <Button
             variant="outline"
             size="sm"
