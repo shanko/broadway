@@ -83,9 +83,13 @@ export default function Login({ onLogin }) {
                 Sign In
               </Button>
 
-              <p className="text-xs text-gray-500 text-center pt-1">
-                Demo: demo@example.com / password123
-              </p>
+              <button
+                type="button"
+                onClick={() => { setEmail(DEMO_USER.email); setPassword(DEMO_USER.password) }}
+                className="w-full text-xs text-gray-400 hover:text-gray-300 active:text-gray-200 text-center pt-1 underline underline-offset-2"
+              >
+                Tap to fill demo credentials
+              </button>
             </form>
           </CardContent>
         </Card>
