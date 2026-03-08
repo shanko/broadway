@@ -33,6 +33,40 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+        // Skip waiting so new SW activates immediately
+        skipWaiting: true,
+        clientsClaim: true,
+        // Don't precache index.html — always fetch fresh from network
+        navigateFallback: null,
+        runtimeCaching: [
+          {
+            // HTML pages: network first, fall back to cache
+            urlPattern: ({ request }) => request.mode === 'navigate',
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'pages',
+              expiration: { maxAgeSeconds: 60 * 60 }, // 1 hour
+            },
+          },
+          {
+            // JS/CSS with hashed filenames: cache first (hash ensures freshness)
+            urlPattern: /\.(?:js|css)$/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'static-assets',
+              expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 }, // 1 day
+            },
+          },
+          {
+            // Images: cache first with expiration
+            urlPattern: /\.(?:png|jpg|jpeg|svg|gif|ico|webp)$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'images',
+              expiration: { maxEntries: 30, maxAgeSeconds: 60 * 60 * 24 * 7 }, // 7 days
+            },
+          },
+        ],
       },
     }),
   ],
