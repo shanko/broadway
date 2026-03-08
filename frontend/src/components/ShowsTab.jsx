@@ -11,7 +11,7 @@ function formatAsOf(date) {
   })
 }
 
-export default function ShowsTab({ shows, selectedIds, onToggle, onSelectAll, lastUpdated }) {
+export default function ShowsTab({ shows, selectedIds, boughtIds, onToggle, onSelectAll, lastUpdated }) {
   const allSelected = selectedIds.size === shows.length
 
   return (
@@ -60,7 +60,7 @@ export default function ShowsTab({ shows, selectedIds, onToggle, onSelectAll, la
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
                         className="font-semibold text-blue-600 dark:text-blue-400 hover:underline text-sm leading-tight"
-                      >{show.title}</a>
+                      >{show.title}{boughtIds.has(show.id) && <span className="ml-1 text-green-600 dark:text-green-400 font-bold">$$</span>}</a>
                       <div
                         className={cn(
                           "w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 transition-colors mt-0.5",

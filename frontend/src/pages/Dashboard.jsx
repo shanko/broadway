@@ -162,6 +162,7 @@ export default function Dashboard({ user, onLogout }) {
           <ShowsTab
             shows={shows}
             selectedIds={selectedIds}
+            boughtIds={boughtIds}
             onToggle={toggleSelect}
             onSelectAll={selectAll}
             lastUpdated={lastUpdated}
