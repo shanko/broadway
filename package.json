@@ -1,0 +1,9 @@
+{
+  "name": "broadway",
+  "private": true,
+  "scripts": {
+    "install": "cd frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "npx serve frontend/dist -s -l 3000"
+  }
+}
