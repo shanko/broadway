@@ -18,6 +18,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 1,
     title: "Aladdin",
+    slug: "aladdin-broadway",
     venue: "New Amsterdam Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -28,6 +29,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 2,
     title: "Back to the Future: The Musical",
+    slug: "back-to-the-future",
     venue: "Winter Garden Theatre",
     category: "Musical",
     runtime: "2h 35m",
@@ -38,6 +40,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 3,
     title: "The Book of Mormon",
+    slug: "book-mormon",
     venue: "Eugene O'Neill Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -48,6 +51,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 4,
     title: "Chicago",
+    slug: "chicago",
     venue: "Ambassador Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -58,6 +62,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 5,
     title: "Death Becomes Her",
+    slug: "death-becomes-her",
     venue: "Lunt-Fontanne Theatre",
     category: "Musical",
     runtime: "2h 15m",
@@ -68,6 +73,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 6,
     title: "Gypsy",
+    slug: "gypsy",
     venue: "Majestic Theatre",
     category: "Musical",
     runtime: "2h 45m",
@@ -78,6 +84,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 7,
     title: "Hamilton",
+    slug: "hamilton-broadway",
     venue: "Richard Rodgers Theatre",
     category: "Musical",
     runtime: "2h 45m",
@@ -88,6 +95,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 8,
     title: "Harry Potter and the Cursed Child",
+    slug: "harry-potter-and-cursed-child-broadway",
     venue: "Lyric Theatre",
     category: "Play",
     runtime: "3h 30m",
@@ -98,6 +106,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 9,
     title: "Hell's Kitchen",
+    slug: "hells-kitchen",
     venue: "Shubert Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -108,6 +117,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 10,
     title: "The Lion King",
+    slug: "the-lion-king",
     venue: "Minskoff Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -118,6 +128,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 11,
     title: "MJ The Musical",
+    slug: "mj",
     venue: "Neil Simon Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -128,6 +139,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 12,
     title: "Moulin Rouge! The Musical",
+    slug: "moulin-rouge-musical",
     venue: "Al Hirschfeld Theatre",
     category: "Musical",
     runtime: "2h 35m",
@@ -138,6 +150,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 13,
     title: "Oh, Mary!",
+    slug: "oh-mary",
     venue: "Lyceum Theatre",
     category: "Play",
     runtime: "1h 20m",
@@ -148,6 +161,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 14,
     title: "The Outsiders",
+    slug: "the-outsiders",
     venue: "Bernard B. Jacobs Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -158,6 +172,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 15,
     title: "Smash",
+    slug: "smash",
     venue: "Imperial Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -168,6 +183,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 16,
     title: "Suffs",
+    slug: "suffs",
     venue: "Music Box Theatre",
     category: "Musical",
     runtime: "2h 45m",
@@ -178,6 +194,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 17,
     title: "Swept Away",
+    slug: "swept-away",
     venue: "Longacre Theatre",
     category: "Musical",
     runtime: "2h 15m",
@@ -188,6 +205,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 18,
     title: "Wicked",
+    slug: "wicked",
     venue: "Gershwin Theatre",
     category: "Musical",
     runtime: "2h 45m",
@@ -198,6 +216,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 19,
     title: "The Great Gatsby",
+    slug: "the-great-gatsby",
     venue: "Broadway Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -208,6 +227,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 20,
     title: "Water for Elephants",
+    slug: "water-for-elephants",
     venue: "Imperial Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -218,6 +238,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 21,
     title: "Hadestown",
+    slug: "hadestown",
     venue: "Walter Kerr Theatre",
     category: "Musical",
     runtime: "2h 30m",
@@ -228,6 +249,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 22,
     title: "The Notebook",
+    slug: "the-notebook",
     venue: "Schoenfeld Theatre",
     category: "Musical",
     runtime: "2h 20m",
@@ -238,6 +260,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 23,
     title: "Cabaret",
+    slug: "cabaret",
     venue: "August Wilson Theatre",
     category: "Musical",
     runtime: "2h 50m",
@@ -248,6 +271,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 24,
     title: "McNeal",
+    slug: "mcneal",
     venue: "Vivian Beaumont Theater",
     category: "Play",
     runtime: "1h 45m",
@@ -258,6 +282,7 @@ export const BROADWAY_SHOWS = [
   {
     id: 25,
     title: "Sunset Boulevard",
+    slug: "sunset-boulevard",
     venue: "St. James Theatre",
     category: "Musical",
     runtime: "2h 15m",
